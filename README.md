@@ -318,7 +318,7 @@ Headshot AI is released under the [MIT License](https://choosealicense.com/licen
 
 ### 下一步计划
 1. ✅ 完成 Supabase URL 配置修复
-2. 🔄 测试用户注册登录流程
+2. ✅ 修复Magic Link 404错误，创建/auth/confirm路由
 3. 🔄 配置 Astria AI API 密钥
 4. ⏳ 配置可选的 Stripe 支付功能
 5. ⏳ 配置可选的 Resend 邮件服务

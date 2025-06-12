@@ -64,7 +64,7 @@ export const Login = ({
   }
 
   const protocol = host?.includes("localhost") ? "http" : "https";
-  const redirectUrl = `${protocol}://${host}/auth/callback`;
+  const redirectUrl = `${protocol}://${host}/auth/confirm`;
 
   console.log({ redirectUrl });
 

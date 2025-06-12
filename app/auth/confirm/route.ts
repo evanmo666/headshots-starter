@@ -7,7 +7,15 @@ export async function GET(req: NextRequest) {
   const requestUrl = new URL(req.url);
   const token_hash = requestUrl.searchParams.get("token_hash");
   const type = requestUrl.searchParams.get("type");
-  const next = requestUrl.searchParams.get("next") || "/";
+  const redirect_to = requestUrl.searchParams.get("redirect_to");
+  const next = redirect_to || requestUrl.searchParams.get("next") || "/";
+
+  console.log("Auth confirm route called with params:", {
+    token_hash: token_hash?.substring(0, 20) + "...",
+    type,
+    redirect_to,
+    next
+  });
 
   if (token_hash && type) {
     const supabase = createRouteHandlerClient<Database>({ cookies });
