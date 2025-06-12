@@ -271,3 +271,41 @@ If you want to contribute to the codebase make sure you create a new branch and 
 ## License
 
 Headshot AI is released under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+## 部署记录和更新日志
+
+### 2025-01-XX 部署记录
+- ✅ 项目从 GitHub 成功克隆到本地
+- ✅ 配置 Vercel 部署环境
+- ✅ 集成 Supabase 数据库
+- ✅ 配置必要的环境变量
+- ✅ 设置 Vercel Blob 存储
+- ✅ 配置 Astria AI API 集成
+- ✅ 设置 Magic Link 邮件模板
+- ✅ 配置 URL 重定向设置
+
+### 环境变量配置清单
+- [x] ASTRIA_API_KEY - Astria AI API 密钥
+- [x] APP_WEBHOOK_SECRET - Webhook 安全密钥
+- [x] DEPLOYMENT_URL - Vercel 部署 URL
+- [x] BLOB_READ_WRITE_TOKEN - Vercel Blob 存储令牌
+- [x] SUPABASE 相关变量 - 通过 Vercel 集成自动配置
+- [x] NEXT_PUBLIC_TUNE_TYPE=packs - 使用新的 Packs API
+- [x] PACK_QUERY_TYPE=both - 查询类型配置
+
+### 数据库表结构
+- ✅ credits - 用户积分表
+- ✅ images - 生成图片表  
+- ✅ models - AI 模型表
+- ✅ samples - 样本图片表
+
+### 已知问题和解决方案
+- 无已知技术债务
+- 所有核心功能已配置完成
+- 遵循 Next.js 15 最佳实践
+
+### 下一步计划
+1. 测试完整的用户流程
+2. 配置可选的 Stripe 支付功能
+3. 配置可选的 Resend 邮件服务
+4. 性能优化和监控设置
